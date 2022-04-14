@@ -1,0 +1,11 @@
+<h3> Request for rides as a passenger! </h3>
+<hr>
+
+<form action = "RiderAddRequest.html" method = "POST">
+	{% csrf_token %}
+	<table>
+		{{form.as_table}}
+	</table>
+	<i>*Leave Driver details blank</i><br>
+    <input type ="submit">
+</form>

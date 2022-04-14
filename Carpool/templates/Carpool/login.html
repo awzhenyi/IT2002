@@ -1,0 +1,16 @@
+<div class="login">
+    <h1>Login</h1>
+    <form action = "login.html" method="POST">{% csrf_token %}
+        <input type="text" name="username" placeholder="Username" required="required" />
+        <input type="password" name="password" placeholder="Password" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Login</button>
+    </form>
+    {% if messages %}<ul class="messagelist">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"
+    {% endif %}>
+    {{ message|capfirst }}
+    </li>{% endfor %}</ul>         
+    {% endif %}
+</div>
+</html>

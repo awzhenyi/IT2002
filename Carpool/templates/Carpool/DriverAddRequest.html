@@ -1,0 +1,11 @@
+<h3> Create your ride as driver! </h3>
+<hr>
+
+<form action = "DriverAddRequest.html" method = "POST">
+	{% csrf_token %}
+	<table>
+		{{form.as_table}}
+	</table>
+	<i>*Leave Rider details blank</i><br>
+    <input type ="submit">
+</form>

@@ -1,0 +1,11 @@
+<h3> Confirm your booking! </h3>
+<hr>
+
+<form action = "confirm.html" method = "POST">
+	{% csrf_token %}
+	<table>
+		{{form.as_table}}
+	</table>
+	<i>*Please Fill In Rider Details</i><br>
+    <input type="submit"></a>
+</form>

@@ -1,0 +1,30 @@
+
+<html>
+    <body>
+        <table border="1">
+        <tr>
+            <th>Driver's first name</th>
+            <th>Driver's last name</th>
+            <th>Carplate Number</th>
+            <th>Car Model</th>
+            <th>Pickup time</th>
+            <th>Dropoff point</th>
+            <th>Pickup Timing</th>
+            <th>Price of Ride</th>
+        </tr>
+        {% for r in records %}
+        <tr>
+            <td> {{ r.1 }}</td>
+            <td> {{ r.2 }}</td>
+            <td> {{ r.3 }}</td>
+            <td> {{ r.4 }}</td>
+            <td> {{ r.5 }}</td> 
+            <td> {{ r.6 }}</td>
+            <td> {{ r.7 }}</td>
+            <td> {{ r.8 }} <a class="btn btn-sm btn-info" href = "{% url 'udar' r.0 %}">Book this ride!</a></td>
+
+        </tr>
+        {% endfor %}
+        </table>
+    </body>
+</html>         

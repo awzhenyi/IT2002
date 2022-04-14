@@ -1,0 +1,11 @@
+<h3>Register for an account</h3>
+<div class = "form-box">
+<form action = "register.html" method = "POST">{% csrf_token %}
+    <input type = "text" name = "username" required placeholder="username"><br>
+    <input type = "password" name = "password" required placeholder=password><br>
+    <input type = "text" name = "email_address" required placeholder="email"><br>
+    <input type = "text" name = "first_name" required placeholder = "first name"><br>
+    <input type  = "text" name = "last_name" required placeholder = "last name"><br><br>
+    <input type = "submit"> 
+</form>
+</div>
